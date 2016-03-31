@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-jwt-decode",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember addon for decoding json web tokens.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,12 +11,16 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smashweaver/ember-cli-jwt-decode.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Jason D. Jimenez",
   "license": "MIT",
+  "homepage": "https://github.com/smashweaver/ember-cli-jwt-decode",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
@@ -40,7 +44,8 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "jwt-decode"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5"
