@@ -2,8 +2,7 @@
 This ember-cli addon decodes a JWT and returns the payload object. (Visit [https://jwt.io/introduction/](https://jwt.io/introduction/) for an intro to JSON Web Tokens.)
 
 ## Installation
-* Add the following to devDependencies in package.json: `"ember-cli-jwt-decode": "https://github.com/smashweaver/ember-cli-jwt-decode"`
-* `npm install`
+* npm install --save-dev ember-cli-jwt-decode 
 
 ## Usage
 <pre>
