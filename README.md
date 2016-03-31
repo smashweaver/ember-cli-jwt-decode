@@ -1,12 +1,9 @@
 # ember-cli-jwt-decode
 
-This README outlines the details of collaborating on this Ember addon.
-
 ## Installation
 
-* `git clone` this repository
+* Add the following to devDependencies in package.json: `"ember-cli-jwt-decode": "https://github.com/smashweaver/ember-cli-jwt-decode"`
 * `npm install`
-* `bower install`
 
 ## Running
 
