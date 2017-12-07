@@ -6,10 +6,12 @@ export function jwt_decode(token) {
     throw new Error('Invalid token specified');
   }
 
-  var tokenParts = token.split('.');
+  let tokenParts = token.split('.');
   if (tokenParts.length !== 3) {
     throw new Error('Invalid token specified');
   }
 
   return JSON.parse(base64UrlDecode(tokenParts[1]));
 }
+
+export default jwt_decode;

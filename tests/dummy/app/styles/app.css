@@ -1,0 +1,24 @@
+.jwt-input {
+  height: 50px;
+  width: 100%;
+  font: 1em "Droid Sans Mono", monospace;
+}
+
+.container {
+  padding: 10px;
+}
+
+.result {
+  font: 1em "Droid Sans Mono", monospace;
+  line-height: 1.5;
+  background-color: #FAFAFA;
+  border: 1px solid #bbb;
+  overflow: auto;
+  white-space: pre-line;
+  padding: 0 20px 20px;
+}
+
+.error {
+  color: rgb(241, 12, 12);
+  font-style: italic;
+}

@@ -1,3 +1,4 @@
+/*eslint no-cond-assign: 0 */
 //from: https://github.com/auth0/jwt-decode/blob/master/lib/atob.js
 /**
  * The code was extracted from:
