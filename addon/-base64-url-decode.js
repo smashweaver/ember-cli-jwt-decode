@@ -2,31 +2,33 @@
 import { atob } from './-atob';
 
 function b64DecodeUnicode(str) {
-  return decodeURIComponent(atob(str).replace(/(.)/g, function (m, p) {
-    var code = p.charCodeAt(0).toString(16).toUpperCase();
-    if (code.length < 2) {
-      code = '0' + code;
-    }
-    return '%' + code;
-  }));
+  return decodeURIComponent(
+    atob(str).replace(/(.)/g, function (m, p) {
+      var code = p.charCodeAt(0).toString(16).toUpperCase();
+      if (code.length < 2) {
+        code = '0' + code;
+      }
+      return '%' + code;
+    })
+  );
 }
 
 export function base64UrlDecode(str) {
-  var output = str.replace(/-/g, "+").replace(/_/g, "/");
+  var output = str.replace(/-/g, '+').replace(/_/g, '/');
   switch (output.length % 4) {
     case 0:
       break;
     case 2:
-      output += "==";
+      output += '==';
       break;
     case 3:
-      output += "=";
+      output += '=';
       break;
     default:
-      throw "Illegal base64url string!";
+      throw 'Illegal base64url string!';
   }
 
-  try{
+  try {
     return b64DecodeUnicode(output);
   } catch (err) {
     return atob(output);
