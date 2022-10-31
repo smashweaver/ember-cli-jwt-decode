@@ -6,7 +6,7 @@ export function jwt_decode(token) {
     throw new Error('Invalid token specified');
   }
 
-  let tokenParts = token.split('.');
+  const tokenParts = token.split('.');
   if (tokenParts.length !== 3) {
     throw new Error('Invalid token specified');
   }
